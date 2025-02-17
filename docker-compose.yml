@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    container_name: aplicacio1
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/var/www/html
+      - ./php:/var/www/html
+    restart: always

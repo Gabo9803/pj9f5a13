@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Càlcul de Volum i Àrea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Cossos</h1>
+    <form action="php/calcular.php" method="POST">
+        <label for="tipus">Selecciona un cos:</label>
+        <select name="tipus" id="tipus">
+            <option value="cilindre">Cilindre</option>
+            <option value="con">Con</option>
+        </select>
+        <br><br>
+        
+        <label for="radi">Radi (cm):</label>
+        <input type="number" name="radi" id="radi" required>
+        <br><br>
+
+        <label for="altura">Altura (cm):</label>
+        <input type="number" name="altura" id="altura" required>
+        <br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
