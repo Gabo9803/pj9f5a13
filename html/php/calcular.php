@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultats del Càlcul</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Resultats</h1>
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <p><strong>Àrea Total:</strong> <?php echo round($area_total, 2); ?> cm²</p>
     <p><strong>Volum:</strong> <?php echo round($volum, 2); ?> cm³</p>
 
-    <a href="../index.html">Tornar al formulari</a>
+    <a href="index.html">Tornar al formulari</a>
 
 </body>
 </html>
