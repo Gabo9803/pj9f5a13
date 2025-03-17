@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcular PartD de Volum i Àrea</title>
+    <title>Calculadora de Volum i Àrea</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora de Cossos-FaseD</h1>
+    <h1>Calculadora de Cossos</h1>
     <form action="php/calcular.php" method="POST">
         <label for="tipus">Selecciona un cos:</label>
         <select name="tipus" id="tipus">
             <option value="cilindre">Cilindre</option>
             <option value="con">Con</option>
+            <option value="esfera">Esfera</option>
         </select>
         <br><br>
-        
+
         <label for="radi">Radi (cm):</label>
         <input type="number" name="radi" id="radi" required>
         <br><br>
 
-        <label for="altura">Altura (cm):</label>
-        <input type="number" name="altura" id="altura" required>
+        <label for="altura">Altura (cm) <em>(Només per cilindre i con)</em>:</label>
+        <input type="number" name="altura" id="altura">
         <br><br>
 
         <button type="submit">Calcular</button>
