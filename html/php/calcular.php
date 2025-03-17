@@ -40,5 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <p><strong>Volum:</strong> <?php echo round($volum, 2); ?> cm³</p>
 
     <a href="../index.html">Tornar al formulari</a>
+    <a href="../style.css">Tornar al formulari</a>
+
 </body>
 </html>
